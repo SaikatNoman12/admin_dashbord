@@ -165,6 +165,54 @@ img {
     color: var(--color-success);
 }
 
+.right {
+    margin-top: 1.4rem;
+}
+
+.right .top {
+    display: flex;
+    justify-content: end;
+}
+
+.right .top #menu-btn {
+    display: none;
+}
+
+.right .theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 4.2rem;
+    height: 1.6rem;
+    cursor: pointer;
+    background: var(--color-light);
+    border-radius: var(--border-radius-1);
+    margin-right: 1.5rem;
+}
+
+.right .theme-toggle span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    font-size: 1.2rem;
+}
+
+.right .theme-toggle span.active {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: var(--border-radius-1);
+    width: 50%;
+}
+
+.right .top .profile{
+    display: flex;
+    gap: 1rem;
+    text-align: right;
+    align-items: center;
+}
+
 /* -- 
 global css end
 -- */
@@ -436,12 +484,13 @@ main table tbody tr:last-child td {
     border: none;
 }
 
-main .recent-orders a{
+main .recent-orders a {
     display: block;
     margin: 1rem auto !important;
     color: var(--color-primary);
     text-align: center;
 }
+
 /* -- 
 specific css end
 -- */
