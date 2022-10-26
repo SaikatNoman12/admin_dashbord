@@ -9,10 +9,12 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/20d6bc66e0.js" crossorigin="anonymous"></script>
 
-    <!-- material icons -->
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet"> -->
+    <!-- material icons links -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     <!-- custom css link -->
     <link rel="stylesheet" href="./css/style.css">
@@ -86,6 +88,88 @@
             </div>
 
         </aside>
+
+        <main>
+            <h1>Dashboard</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insights">
+
+                <!----- start Sales ----->
+                <div class="sales">
+                    <span class="material-symbols-outlined">analytics</span>
+
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Sales</h3>
+                            <h1>$25,024</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <!----- end Sales ----->
+
+                <!----- start Expenses ----->
+                <div class="expneses">
+                    <span class="material-symbols-outlined">bar_chart</span>
+
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Expenses</h3>
+                            <h1>$14,024</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>62%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <!----- end Expenses ----->
+
+                <!----- start Income ----->
+                <div class="income">
+                    <span class="material-symbols-outlined">stacked_line_chart</span>
+
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Income</h3>
+                            <h1>$10,024</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>44%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <!----- end Income ----->
+
+            </div>
+
+        </main>
+
     </div>
 
     <!-- custom js link -->
