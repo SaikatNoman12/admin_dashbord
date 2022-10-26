@@ -31,7 +31,7 @@ global css start
     --border-radius-2: 0.8rem;
     --border-radius-3: 1.2rem;
 
-    --card-padding: 1.8rem;
+    --card-padding: 1.8rem 1rem;
     --padding-1: 1.2rem;
 
     --box-shadow: 0 2rem 3rem var(--color-light);
@@ -318,6 +318,89 @@ main .insights>div {
 
 main .insights>div:hover {
     box-shadow: 0 .5rem 1rem var(--color-light);
+}
+
+main .insights>div span {
+    background-color: var(--color-primary);
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--color-white);
+    font-size: 2rem;
+}
+
+main .insights>div.expneses span {
+    background-color: var(--color-danger);
+}
+
+main .insights>div.income span {
+    background-color: var(--color-success);
+}
+
+main .insights>div .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .insights h3 {
+    margin: 1rem 0 0.6rem !important;
+    font-size: 1rem;
+}
+
+main .insights .progress {
+    position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+main .insights svg {
+    width: 7rem;
+    height: 7rem;
+}
+
+main .insights svg circle {
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-width: 14;
+    stroke-linecap: round;
+    stroke-dasharray: 110;
+    stroke-dashoffset: 92;
+    transform: translate(5px, 5px);
+}
+
+main .insights .sales svg circle {
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+}
+
+main .insights .expnses svg circle {
+    stroke-dashoffset: 20;
+    stroke-dasharray: 80;
+}
+
+main .insights .income svg circle {
+    stroke-dashoffset: 30;
+    stroke-dasharray: 110;
+}
+
+main .insights .progress .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .insights small {
+    margin-top: 1.3rem;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 /* -- 
