@@ -618,6 +618,26 @@ main .recent-orders a {
     letter-spacing: 1px;
 }
 
+@media (max-width:1506px) {
+    .container {
+        width: 96%;
+        gap: 1.8rem;
+        grid-template-columns: 12rem auto 20rem;
+    }
+}
+
+@media (max-width:1454px) {
+    .container {
+        width: 96%;
+        gap: 1.8rem;
+        grid-template-columns: 12rem auto 20rem;
+    }
+
+    main .insights {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
 
 @media (max-width:1200px) {
     .container {
@@ -683,14 +703,10 @@ main .recent-orders a {
         padding: 0 1rem;
     }
 
-    main .insights {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     main .recent-orders {
         position: absolute;
         width: 94%;
-        bottom: -155%;
+        bottom: -164%;
         left: 50%;
         transform: translateX(-50%);
         margin: 8rem 0 0 0rem;
