@@ -774,9 +774,8 @@ main .recent-orders a {
     }
 
     main {
-        margin-top: 8rem;
         width: 96%;
-        margin: auto;
+        margin: 8rem auto 0 auto;
     }
 
     main .recent-orders {
