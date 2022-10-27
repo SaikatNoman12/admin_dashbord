@@ -3,7 +3,7 @@ const orders = [
         productName: 'Foldable Mini Drone',
         productNumber: '5455',
         paymentStatus: 'Due',
-        shipping: 'Pending'
+        shipping: 'Details'
     },
     {
         productName: 'Pro Mini Drone',
@@ -27,7 +27,7 @@ const orders = [
         productName: 'Mini Drone',
         productNumber: '2935',
         paymentStatus: 'Due',
-        shipping: 'Pending'
+        shipping: 'Details'
     },
     {
         productName: 'Foldable Drone',

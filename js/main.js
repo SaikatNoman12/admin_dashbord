@@ -35,6 +35,15 @@
         for (let orderEle in order) {
 
             const td = document.createElement('td');
+            if (order[orderEle].toLowerCase() === 'pending') {
+                td.classList.add('warning');
+            }
+            else if (order[orderEle].toLowerCase() === 'details') {
+                td.classList.add('primary');
+            }
+            else if (order[orderEle].toLowerCase() === 'decliend') {
+                td.classList.add('danger');
+            }
             td.innerHTML = order[orderEle];
             tr.appendChild(td);
 
