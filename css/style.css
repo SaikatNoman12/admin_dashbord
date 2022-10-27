@@ -194,6 +194,29 @@ specific css start
     grid-template-columns: 11rem auto 19rem;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(13, 12, 12, 0.206);
+    min-height: 100vh;
+    width: 0%;
+    z-index: 3;
+    display: none;
+    transition-delay: 400ms;
+    transition: background 300ms ease,
+        width 300ms ease;
+    transform-origin: left center;
+    animation: overlay 200ms ease-in-out 100ms forwards;
+    display: none;
+}
+
+@keyframes overlay {
+    to {
+        width: 100%;
+    }
+}
+
 aside {
     min-height: 100vh;
 }
@@ -703,7 +726,7 @@ main .recent-orders a {
         left: -100%;
         background-color: var(--color-white);
         width: 18rem;
-        z-index: 3;
+        z-index: 4;
         box-shadow: 1rem 3rem 4rem var(--color-light);
         padding-right: var(--card-padding);
         min-height: 100vh;
