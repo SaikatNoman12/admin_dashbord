@@ -24,6 +24,7 @@ global css start
     --color-primary-variant: #111e88;
     --color-dark-variant: #677483;
     --color-background: #f6f6f9;
+    --color-icon: rgb(255, 255, 255);
 
     --card-border-radius: 2rem;
 
@@ -45,6 +46,7 @@ global css start
     --color-dark-variant: #a3bdcc;
     --color-light: rgba(0, 0, 0, 0.4);
     --box-shadow: 0rem 2rem 3rem var(--color-light);
+    transition: var(--box-shadow) 0s ease;
 }
 
 * {
@@ -148,8 +150,8 @@ img {
 }
 
 .profile-photo {
-    width: 2.8rem;
-    height: 2.8rem;
+    width: 2.6rem;
+    height: 2.6rem;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -189,7 +191,7 @@ specific css start
     min-height: 100vh;
     margin: 0px auto;
     gap: 1.8rem;
-    grid-template-columns: 14rem auto 23rem;
+    grid-template-columns: 10rem auto 20rem;
 }
 
 aside {
@@ -219,6 +221,7 @@ aside .logo img {
 aside .logo h2 {
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-size: 20px;
 }
 
 aside .close {
@@ -236,29 +239,28 @@ aside .sidebar {
 aside h3 {
     font-weight: 500;
     margin-left: .6rem !important;
-    letter-spacing: 1ps;
+    letter-spacing: 1px;
 }
 
 aside .sidebar a {
     display: flex;
     color: var(--color-info-dark);
-    margin-left: 2rem !important;
+    /* margin-left: 2rem !important; */
     align-items: center;
     position: relative;
-    height: 3.3rem;
-    transition: all 300ms ease;
+    height: 3rem;
+    transition: background-color 300ms ease,
+    ;
 }
 
 aside .sidebar a span {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     transition: all 300ms ease;
-    margin-left: 6px;
+    /* margin-left: 6px; */
 }
 
 aside .sidebar a:last-child {
-    position: absolute;
-    bottom: 2rem;
-    width: 100%;
+    margin-top: 20px;
 }
 
 aside .sidebar .active {
@@ -284,19 +286,27 @@ aside .sidebar a:hover {
 }
 
 aside .sidebar a:hover span {
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
 }
 
 aside .sidebar a .massage-count {
     background-color: var(--color-danger);
     color: var(--color-white);
     padding: 2px 10px;
-    font-size: 11px;
+    font-size: 14px;
+    letter-spacing: 1px;
     border-radius: var(--border-radius-1);
+    margin-left: 16px;
 }
+
+
 
 main {
     margin-top: 1.4rem;
+}
+
+main h1 {
+    font-size: 1.4rem;
 }
 
 main .date {
@@ -304,13 +314,13 @@ main .date {
     background-color: var(--color-light);
     border-radius: var(--border-radius-1);
     margin-top: 1rem;
-    padding: 0.5rem 1.6rem;
+    padding: 0.2rem 1rem;
 }
 
 main .date input[type="date"] {
     background-color: transparent !important;
     color: var(--color-dark);
-    font-size: 17px;
+    font-size: 16px;
 }
 
 main .insights {
@@ -325,7 +335,7 @@ main .insights>div {
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
     margin-top: 1.6rem;
-    transition: all 300ms ease-in-out;
+    transition: box-shadow 30ms ease-in-out;
 }
 
 main .insights>div:hover {
@@ -336,7 +346,7 @@ main .insights>div span {
     background-color: var(--color-primary);
     padding: 0.5rem;
     border-radius: 50%;
-    color: var(--color-white);
+    color: var(--color-icon);
     font-size: 2rem;
 }
 
@@ -355,8 +365,15 @@ main .insights>div .middle {
 }
 
 main .insights h3 {
-    margin: 1rem 0 0.6rem !important;
+    margin: 0 0 0.4rem !important;
     font-size: 1rem;
+    font-weight: 600;
+}
+
+
+main .insights h1 {
+    font-size: 24px;
+    font-weight: 700;
 }
 
 main .insights .progress {
@@ -375,7 +392,7 @@ main .insights svg {
 main .insights svg circle {
     fill: none;
     stroke: var(--color-primary);
-    stroke-width: 14;
+    stroke-width: 12;
     stroke-linecap: round;
     stroke-dasharray: 110;
     stroke-dashoffset: 92;
@@ -430,7 +447,7 @@ main .recent-orders table {
     width: 100% !important;
     text-align: center !important;
     box-shadow: var(--box-shadow);
-    transition: all 300ms ease;
+    transition: box-shadow 30ms ease;
 }
 
 main .recent-orders table:hover {
@@ -472,8 +489,8 @@ main .recent-orders a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 4.2rem;
-    height: 1.6rem;
+    width: 3.6rem;
+    height: 1.4rem;
     cursor: pointer;
     background: var(--color-light);
     border-radius: var(--border-radius-1);
@@ -486,7 +503,7 @@ main .recent-orders a {
     justify-content: center;
     width: 50%;
     height: 100%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .right .theme-toggle span.active {
@@ -503,20 +520,25 @@ main .recent-orders a {
     align-items: center;
 }
 
+.right .top .profile .info p {
+    font-size: 16px;
+}
+
 .right .recent-updates {
     margin-top: 1rem;
 }
 
 .right .recent-updates h2 {
+    font-size: 20px;
     margin-bottom: 0.8rem !important;
 }
 
 .right .recent-updates .updates {
     background-color: var(--color-white);
-    padding: var(--card-padding);
+    padding: 18px 16px;
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
-    transition: all 300ms ease-in-out;
+    transition: box-shadow 30ms ease-in-out;
 }
 
 .right .recent-updates .updates:hover {
@@ -530,6 +552,14 @@ main .recent-orders a {
     margin-bottom: 1rem;
 }
 
+.right .recent-updates .updates .update p {
+    font-size: 14px;
+}
+
+.right .recent-updates .updates .update p small {
+    font-size: 10px;
+}
+
 .right .recent-updates .updates .update:last-child {
     margin-bottom: 0px;
 }
@@ -539,6 +569,7 @@ main .recent-orders a {
 }
 
 .right .sales-analytics h2 {
+    font-size: 20px;
     margin-bottom: 0.8rem !important;
 }
 
@@ -548,10 +579,10 @@ main .recent-orders a {
     gap: 1rem;
     margin-bottom: 1.4rem;
     background-color: var(--color-white);
-    padding: 1.4rem var(--card-padding);
+    padding: 1rem 18px;
     border-radius: var(--border-radius-3);
     box-shadow: var(--box-shadow);
-    transition: all 300ms ease;
+    transition: box-shadow 30ms ease;
 }
 
 .right .sales-analytics .item:hover {
@@ -566,13 +597,25 @@ main .recent-orders a {
     width: 100%;
 }
 
+.right .sales-analytics .item .right .info h3 {
+    font-size: 15px;
+}
+
+.right .sales-analytics .item .right .info small {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
 .right .sales-analytics .item .icon {
-    padding: 0.6rem;
+    padding: 0.5rem;
     color: var(--color-white);
     border-radius: 50%;
     background-color: var(--color-primary);
     display: flex;
-    font-size: 1rem;
+}
+
+.right .sales-analytics .item .icon span {
+    font-size: 1.4rem;
 }
 
 .right .sales-analytics .item.offline .icon {
@@ -594,6 +637,9 @@ main .recent-orders a {
     color: var(--color-primary);
     border: 2px dashed var(--color-primary);
     cursor: pointer;
+    padding: 1.2rem 1rem;
+    /* transition:color 300ms ease, */
+    /* box-shadow 300ms ease; */
 }
 
 .right .sales-analytics .item.add-product:hover {
@@ -687,10 +733,10 @@ main .recent-orders a {
         height: 3.4rem;
     }
 
-    aside .sidebar a:last-child {
+    /* aside .sidebar a:last-child {
         position: relative;
         bottom: 0rem;
-    }
+    } */
 
     aside .close {
         display: inline-block;
