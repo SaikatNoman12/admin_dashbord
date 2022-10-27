@@ -198,23 +198,8 @@ specific css start
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(13, 12, 12, 0.206);
-    min-height: 100vh;
-    width: 0%;
+    display: none;
     z-index: 3;
-    display: none;
-    transition-delay: 400ms;
-    transition: background 300ms ease,
-        width 300ms ease;
-    transform-origin: left center;
-    animation: overlay 200ms ease-in-out 100ms forwards;
-    display: none;
-}
-
-@keyframes overlay {
-    to {
-        width: 100%;
-    }
 }
 
 aside {
@@ -271,8 +256,7 @@ aside .sidebar a {
     align-items: center;
     position: relative;
     height: 3rem;
-    transition: background-color 300ms ease,
-    ;
+    transition: background-color 300ms ease;
 }
 
 aside .sidebar a span {
@@ -719,6 +703,24 @@ main .recent-orders a {
     .container {
         width: 94%;
         grid-template-columns: auto 23rem;
+    }
+
+    .overlay {
+        background-color: rgba(13, 12, 12, 0.206);
+        min-height: 100vh;
+        width: 0%;
+        transition-delay: 400ms;
+        transition: background 300ms ease,
+            width 300ms ease;
+        transform-origin: left center;
+        animation: overlay 200ms ease-in-out 100ms forwards;
+        display: none;
+    }
+
+    @keyframes overlay {
+        to {
+            width: 100%;
+        }
     }
 
     aside {
