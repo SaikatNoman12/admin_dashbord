@@ -25,6 +25,7 @@
     });
 
     themeToggle.addEventListener('click', () => {
+        
         document.body.classList.toggle('dark-theme-variables');
 
         themeToggle.firstElementChild.classList.toggle('active');

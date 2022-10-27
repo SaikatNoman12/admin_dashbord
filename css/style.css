@@ -1,9 +1,6 @@
 /* -- google fonts poppins -- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-/* === start === */
-
 /* -- 
 global css start
 -- */
@@ -35,7 +32,7 @@ global css start
     --card-padding: 1.8rem 1rem;
     --padding-1: 1.2rem;
 
-    --box-shadow: 0 2rem 3rem var(--color-light);
+    --box-shadow: 0 .5rem 1rem var(--color-light);
 }
 
 /* dark theme variable */
@@ -45,7 +42,7 @@ global css start
     --color-dark: #edeffd;
     --color-dark-variant: #a3bdcc;
     --color-light: rgba(0, 0, 0, 0.4);
-    --box-shadow: 0rem 2rem 3rem var(--color-light);
+    --box-shadow: 0 .5rem 1rem var(--color-light);
     transition: var(--box-shadow) 0s ease;
 }
 
@@ -73,7 +70,6 @@ body {
     margin: 0px;
     background-color: var(--color-background);
     user-select: none;
-    /* overflow-x: hidden; */
     color: var(--color-dark);
 }
 
@@ -256,13 +252,11 @@ aside .sidebar a {
     align-items: center;
     position: relative;
     height: 3rem;
-    transition: background-color 300ms ease;
 }
 
 aside .sidebar a span {
     font-size: 1.2rem;
     transition: all 300ms ease;
-    /* margin-left: 10px; */
 }
 
 aside .sidebar a:last-child {
@@ -291,10 +285,6 @@ aside .sidebar a:hover {
     color: var(--color-primary);
 }
 
-aside .sidebar a:hover span {
-    /* margin-left: 1rem; */
-}
-
 aside .sidebar a .massage-count {
     background-color: var(--color-danger);
     color: #fff;
@@ -305,8 +295,6 @@ aside .sidebar a .massage-count {
     margin-left: 16px;
     font-weight: 500;
 }
-
-
 
 main {
     margin-top: 1.4rem;
@@ -346,7 +334,7 @@ main .insights>div {
 }
 
 main .insights>div:hover {
-    box-shadow: 0 .5rem 1rem var(--color-light);
+    box-shadow: 0 .2rem .6rem var(--color-light);
 }
 
 main .insights>div span {
@@ -377,7 +365,6 @@ main .insights h3 {
     font-weight: 600;
     letter-spacing: 1px;
 }
-
 
 main .insights h1 {
     font-size: 20px;
@@ -463,7 +450,7 @@ main .recent-orders table {
 }
 
 main .recent-orders table:hover {
-    box-shadow: 0 .5rem 1rem var(--color-light);
+    box-shadow: 0 .2rem .6rem var(--color-light);
 }
 
 main .recent-orders table tbody td {
@@ -484,7 +471,6 @@ main .recent-orders a {
     color: var(--color-primary);
     text-align: center;
 }
-
 
 .right {
     margin-top: 1.4rem;
@@ -556,7 +542,7 @@ main .recent-orders a {
 }
 
 .right .recent-updates .updates:hover {
-    box-shadow: 0 .5rem 1rem var(--color-light);
+    box-shadow: 0 .2rem .6rem var(--color-light);
 }
 
 .right .recent-updates .updates .update {
@@ -600,7 +586,7 @@ main .recent-orders a {
 }
 
 .right .sales-analytics .item:hover {
-    box-shadow: 0 .5rem 1rem var(--color-light);
+    box-shadow: 0 .2rem .6rem var(--color-light);
 }
 
 .right .sales-analytics .item .right {
@@ -652,12 +638,9 @@ main .recent-orders a {
     border: 2px dashed var(--color-primary);
     cursor: pointer;
     padding: 1.2rem 1rem;
-    /* transition:color 300ms ease, */
-    /* box-shadow 300ms ease; */
 }
 
 .right .sales-analytics .item.add-product:hover {
-    box-shadow: none;
     color: var(--color-white);
     background-color: var(--color-primary);
 }
@@ -841,15 +824,12 @@ main .recent-orders a {
     .right .top .theme-toggle {
         height: 1.8rem !important;
     }
-
 }
 
 @media (max-width:1042px) {
-
     .container {
         gap: 1rem;
     }
-
 }
 
 @media (max-width:1038px) {
@@ -894,7 +874,6 @@ main .recent-orders a {
     .right .sales-analytics .items .item {
         margin-bottom: 0rem;
     }
-
 }
 
 @media (max-width:767px) {
@@ -916,23 +895,18 @@ main .recent-orders a {
     .right .sales-analytics .items .item {
         margin-bottom: 2rem;
     }
-
 }
 
 @media (max-width:720px) {
-
     .right .top .theme-toggle {
         left: 75%;
     }
-
 }
 
 @media (max-width:664px) {
-
     main .insights {
         grid-template-columns: 1fr;
     }
-
 }
 
 @media (max-width:596px) {
@@ -945,13 +919,11 @@ main .recent-orders a {
     .right .top .theme-toggle {
         left: 70%;
     }
-
 }
 
 
 
 @media (max-width:436px) {
-
     .right .top .theme-toggle {
         left: 60%;
     }
@@ -959,8 +931,6 @@ main .recent-orders a {
     main .recent-orders table tbody td {
         font-size: 14px;
     }
-
-
 }
 
 @media (max-width:340px) {
@@ -972,6 +942,3 @@ main .recent-orders a {
 /* -- 
 specific css end
 -- */
-
-
-/* === end ==== */
